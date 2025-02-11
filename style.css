@@ -1,4 +1,4 @@
-/* รีเซ็ตค่าเริ่มต้นของ CSS */
+/* รีเซ็ตค่าเริ่มต้น */
 * {
     margin: 0;
     padding: 0;
@@ -7,25 +7,28 @@
   }
   
   body {
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     color: #333;
     line-height: 1.6;
     padding: 20px;
   }
   
+  /* กล่องเนื้อหา */
   .container {
     max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
+    margin: auto;
+    background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
   /* หัวข้อ */
   h1 {
-    text-align: center;
+    font-size: 24px;
     margin-bottom: 20px;
+    color: #333;
   }
   
   /* รายการผู้ใช้ */
@@ -35,79 +38,70 @@
   }
   
   .user-list div {
-    background: #007bff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     padding: 15px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: bold;
   }
   
   .user-list div:hover {
-    background: #0056b3;
+    background: linear-gradient(135deg, #0056b3, #003e80);
+    transform: scale(1.05);
+  }
+  
+  /* ปุ่ม */
+  button, .back-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
   }
   
   /* ปุ่มกลับ */
   .back-button {
-    display: inline-block;
-    margin-bottom: 15px;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
+    background: #6c757d;
+    color: white;
   }
   
   .back-button:hover {
-    color: #0056b3;
-  }
-  
-  /* รายละเอียดผู้ใช้ */
-  .user-detail {
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #5a6268;
   }
   
   /* ปุ่มดูโพสต์ */
-  .button-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
   .view-posts-btn {
-    background: #28a745;
+    background: linear-gradient(135deg, #28a745, #1e7e34);
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
   }
   
   .view-posts-btn:hover {
-    background: #218838;
+    background: linear-gradient(135deg, #1e7e34, #155724);
+    transform: scale(1.05);
   }
   
   /* รายการโพสต์ */
-  .posts-list {
-    list-style: none;
-    padding: 0;
-  }
-  
   .posts-list div {
-    background: #ffcc00;
+    background: linear-gradient(135deg, #ffc107, #e0a800);
     padding: 15px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: bold;
   }
   
   .posts-list div:hover {
-    background: #e6b800;
+    background: linear-gradient(135deg, #e0a800, #c69500);
+    transform: scale(1.05);
   }
   
   /* คอมเมนต์ */
@@ -121,21 +115,17 @@
     background: #f1f1f1;
     padding: 10px;
     margin: 5px 0;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   
-  /* ปุ่มแสดงความคิดเห็น */
+  /* ปุ่มดูความคิดเห็น */
   .toggle-comments-btn {
-    background: #dc3545;
+    background: linear-gradient(135deg, #dc3545, #b52b3a);
     color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
   }
   
   .toggle-comments-btn:hover {
-    background: #c82333;
+    background: linear-gradient(135deg, #b52b3a, #8e222c);
+    transform: scale(1.05);
   }
   
