@@ -1,131 +1,113 @@
-/* รีเซ็ตค่าเริ่มต้น */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  /* กล่องเนื้อหา */
-  .container {
+}
+
+.container {
     max-width: 800px;
-    margin: auto;
+    margin: 20px auto;
     background: white;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  /* หัวข้อ */
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
     color: #333;
-  }
-  
-  /* รายการผู้ใช้ */
-  .user-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .user-list div {
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-  
-  .user-list div:hover {
-    background: linear-gradient(135deg, #0056b3, #003e80);
-    transform: scale(1.05);
-  }
-  
-  /* ปุ่ม */
-  button, .back-button {
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* ปุ่มกลับ */
-  .back-button {
-    background: #6c757d;
-    color: white;
-  }
-  
-  .back-button:hover {
-    background: #5a6268;
-  }
-  
-  /* ปุ่มดูโพสต์ */
-  .view-posts-btn {
-    background: linear-gradient(135deg, #28a745, #1e7e34);
-    color: white;
-  }
-  
-  .view-posts-btn:hover {
-    background: linear-gradient(135deg, #1e7e34, #155724);
-    transform: scale(1.05);
-  }
-  
-  /* รายการโพสต์ */
-  .posts-list div {
-    background: linear-gradient(135deg, #ffc107, #e0a800);
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-  
-  .posts-list div:hover {
-    background: linear-gradient(135deg, #e0a800, #c69500);
-    transform: scale(1.05);
-  }
-  
-  /* คอมเมนต์ */
-  .comments-list {
-    list-style: none;
-    padding: 0;
-    display: none;
-  }
-  
-  .comments-list div {
-    background: #f1f1f1;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-item {
+    background: #f9f9f9;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 8px;
-  }
-  
-  /* ปุ่มดูความคิดเห็น */
-  .toggle-comments-btn {
-    background: linear-gradient(135deg, #dc3545, #b52b3a);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.user-item:hover {
+    background: #e0e0e0;
+}
+
+.user-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.user-item a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #007bff;
     color: white;
-  }
-  
-  .toggle-comments-btn:hover {
-    background: linear-gradient(135deg, #b52b3a, #8e222c);
-    transform: scale(1.05);
-  }
-  
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.user-detail {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.post-item:hover {
+    background: #f0f0f0;
+}
+
+.comments {
+    margin-top: 10px;
+    padding: 10px;
+    background: #eef;
+    border-radius: 5px;
+}
+
+.comments p {
+    margin: 5px 0;
+    font-size: 14px;
+}
