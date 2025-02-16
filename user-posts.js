@@ -5,13 +5,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const postsList = document.getElementById("posts-list");
 
     try {
-        // ดึงข้อมูลผู้ใช้เพื่อแสดงชื่อ
         const userResponse = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
         if (!userResponse.ok) throw new Error("User not found");
         const user = await userResponse.json();
-        userNameElement.textContent = user.name; // แสดงชื่อผู้ใช้
+        userNameElement.textContent = user.name; 
 
-        // ดึงโพสต์ของผู้ใช้
         const postsResponse = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`);
         if (!postsResponse.ok) throw new Error("Posts not found");
         const posts = await postsResponse.json();

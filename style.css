@@ -1,113 +1,153 @@
+/* ฟอนต์จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa; /* พื้นหลังสีอ่อน */
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 900px;
+    margin: 30px auto;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-    color: #333;
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: #555;
 }
 
 .user-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
     background: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ddd;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .user-item:hover {
-    background: #e0e0e0;
+    background: #e7f1ff;
+    transform: translateX(5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+    flex-grow: 1;
+    font-weight: 600;
+    color: #333;
 }
 
 .user-item a {
     text-decoration: none;
     color: #007bff;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .user-item a:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
 
 button {
-    background: #007bff;
+    background: #28a745;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 1em;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #218838;
+    transform: scale(1.05);
 }
-
 
 .back-button {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-decoration: none;
     color: #007bff;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: 0.3s ease;
 }
 
 .back-button:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
 
 .user-detail {
-    background: #fafafa;
-    padding: 15px;
-    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
     border: 1px solid #ddd;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 .posts-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 .post-item {
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
     border: 1px solid #ddd;
-    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    font-size: 1.1em;
 }
 
 .post-item:hover {
-    background: #f0f0f0;
+    background: #fafafa;
+    transform: scale(1.02);
 }
 
 .comments {
-    margin-top: 10px;
-    padding: 10px;
-    background: #eef;
-    border-radius: 5px;
+    margin-top: 15px;
+    padding: 12px;
+    background: #eef4ff;
+    border-radius: 8px;
 }
 
 .comments p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 8px 0;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.comments p strong {
+    color: #007bff;
 }
